@@ -1,0 +1,35 @@
+.main-list {
+  .list-none-style();
+}
+
+.main-list__item {
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+/*Padding у ссылки для увеличения области клика*/
+
+.main-list__link {
+  .font-size-title-style();
+  color: #000000;
+  text-decoration: none;
+  padding-top: 17px;
+  padding-bottom: 12px;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #000000;
+    opacity: 0.3;
+  }
+}

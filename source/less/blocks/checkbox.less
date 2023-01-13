@@ -1,0 +1,61 @@
+.visited-places__label {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  display: inline-block;
+  padding-left: 52px;
+  position: relative;
+  padding-top: 11px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    display: block;
+    background: #f2f2f2;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 16px;
+    background-image: url("../../img/icons/tag.svg");
+    top: 15px;
+    left: 13px;
+    display: none;
+  }
+
+  &:hover::before {
+    background: #e5e5e5;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.visited-places__label:active::before {
+  background: #3333334d;
+}
+
+.visited-places__input[type="checkbox"]:focus + .visited-places__label {
+  &::before {
+    background: #e5e5e5;
+  }
+}
+
+.visited-places__input[type="checkbox"]:active + .visited-places__label {
+  &::before {
+    background: #d5d5d5;
+  }
+}
+
+.visited-places__input:checked + .visited-places__label::after {
+  display: block;
+}

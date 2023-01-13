@@ -1,0 +1,41 @@
+.feedback-form__wrapper {
+  position: relative;
+}
+
+.feedback-form__item {
+  &:not(:last-child)::after {
+    content: "";
+    height: 1px;
+    display: block;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.feedback-form__button-wrapper {
+  position: relative;
+  padding-bottom: 24px;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feedback__button {
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.feedback__footnote {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #33333399;
+  display: block;
+  width: 189px;
+  text-align: right;
+  margin-left: auto;
+}

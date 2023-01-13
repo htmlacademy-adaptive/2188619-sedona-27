@@ -1,0 +1,73 @@
+.bonus-list {
+  .list-none-style();
+  background-color: #ffffff;
+  color: #000000;
+  padding-top: 33px;
+  padding-right: 18px;
+  padding-bottom: 45px;
+}
+
+.bonus__item {
+  padding-left: 65px;
+
+  &:not(:last-child) {
+    margin-bottom: 33px;
+  }
+}
+
+.bonus__title {
+  .padding-margin-none-style();
+  .font-size-title-style();
+  text-align: start;
+  margin-bottom: 16px;
+  max-width: 284px;
+}
+
+.bonus__description {
+  .padding-margin-none-style();
+  .font-size-description-style();
+  text-align: start;
+  max-width: 284px;
+}
+
+.card__housing {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url("../../img/icons/icon-house-mobile.svg") no-repeat;
+    top: -8px;
+    left: 18px;
+  }
+}
+
+.card__food {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url("../../img/icons/icon-food-mobile.svg") no-repeat;
+    top: -7px;
+    left: 18px;
+  }
+}
+
+.card__souvenirs {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url("../../img/icons/icon-souvenirs-mobile.svg") no-repeat;
+    top: -8px;
+    left: 22px;
+  }
+}
