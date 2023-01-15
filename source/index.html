@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,20 +21,22 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list list">
-          <li class="list__item">
-            <a class="list__link list__link--current" href="#">Главная</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link" href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link" href="https://htmlacademy.ru/">Html academy</a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list list">
+            <li class="list__item">
+              <a class="list__link list__link--current" href="index.html">Главная</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="https://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -57,7 +60,7 @@
           <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
         <ul class="advantages__list">
-          <li class="advantages__item card">
+          <li class="advantages__item card advantages__item--first-type">
             <div class="card__wrapper">
               <h3 class="card__title">Настоящий городок</h3>
               <span class="card__number">-№1-</span>
@@ -87,7 +90,7 @@
               </li>
             </ul>
           </li>
-          <li class="advantages__item card">
+          <li class="advantages__item card advantages__item--first-type advantages__item-first-type--reverse">
             <div class="card__wrapper">
               <h3 class="card__title">Там есть мост дьявола</h3>
               <span class="card__number">-№2-</span>
@@ -139,31 +142,35 @@
 
     <!-- Footer -->
 
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
+    <footer class="footer">
+      <div class="footer__wrapper">
 
-        <div class="main-footer__hashtag hashtag">
-          <a class="hashtag__title" href="#">#Visitsedona</a>
+        <div class="footer__hashtag hashtag">
+          <p class="footer__hashtag__title" href="#">#Visitsedona</p>
         </div>
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
-              <span class="visually-hidden">ВКонтакте</span>
+        <div class="footer__social social">
+          <ul class="footer__social__list">
+            <li class="footer__social__item">
+              <a class="footer__social__link footer__social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">ВКонтакте</span></a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
-              <span class="visually-hidden">Телеграмм</span>
+            <li class="footer__social__item">
+              <a class="footer__social__link footer__social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграмм</span></a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
-              <span class="visually-hidden">Youtube</span>
+            <li class="footer__social__item">
+              <a class="footer__social__link footer__social__link--youtube"
+                href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Youtube</span></a>
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright ">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        <div class="footer__copyright copyright ">
+          <a class="footer__copyright__link" id="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="footer__copyright__text">Разработано</b>
+            <img class="main-header__logo-img" src="./img/icons/logo/logo-htmlacademy.svg" alt="Логотип-htmlacademy." width="27"
+          height="35">
+          </a>
         </div>
       </div>
     </footer>

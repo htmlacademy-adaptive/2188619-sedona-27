@@ -3,42 +3,45 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог сайта Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <div class="page__container">
-    <!-- Main-header -->
 
+    <!-- Header -->
     <header class="main-header">
       <a class="main-header__logo" href="#">
         <img class="main-header__logo-img" src="./img/icons/logo/logo-sedona.svg" alt="Герб Седоны." width="186"
           height="96">
       </a>
-      <nav class="main-nav main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list list">
-          <li class="list__item">
-            <a class="list__link list__link--current" href="index.html">Главная</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link" href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="list__item">
-            <a class="list__link" href="https://htmlacademy.ru/">Html academy</a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list list">
+            <li class="list__item">
+              <a class="list__link" href="index.html">Главная</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link list__link--current" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="https://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <!-- Main -->
-    <main class="main-container main-form">
+    <main class="main-container">
       <h1 class="visually-hidden">Форма отзыва</h1>
 
       <!-- Hero -->
@@ -53,20 +56,26 @@
       <div class="catalog-wrapper">
         <section class="catalog">
           <div class="catalog__header section-header">
-            <h2 class="catalog__title">Фото и видео</h2>
-            <p class="catalog__intro ">Не можете решиться на путешествие из-за курса? <br> Фотографии помогут вам забыть о
+            <h2 class="catalog__title feedback__header-title">Фото и видео</h2>
+            <p class="feedback__header-description">Не можете решиться на путешествие из-за курса? <br> Фотографии помогут вам забыть
+              о
               политике и экономике.</p>
           </div>
+
           <ul class="catalog__list">
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
                 <a class="catalog__item-link" href="#"><img class="catalog__item-img catalog__item-img--main" src=""
                     alt="Уходящая в закат дорога на фоне бескрайних просторов." width="1200" height="400"></a>
-                <h3 class="catalog__item-title">Неродные просторы</h3>
-                <div class="catalog__item-author-wrapper">
-                  <span class="catalog__item-author">Автор фото:</span>
-                  <b class="catalog__item-author-name">Борис</b>
-                </div>
+
+                <div class="catalog__item-description">
+                  <div class="catalog__item-title-wrapper">
+                    <h3 class="catalog__item-title">Неродные просторы</h3>
+                    <div class="catalog__item-author-wrapper">
+                      <p class="catalog__item-author">Автор:</p>
+                      <b class="catalog__item-author-name">Борис</b>
+                    </div>
+              </div>
                 <div class="catalog__item-like-wrapper">
                   <button class="catalog__item-like" type="button"><span class="visually-hidden">Поставить
                       лайк</span></button>
@@ -79,11 +88,14 @@
                 <a class="catalog__item-link" href="#">
                   <img class="catalog__item-img" src="" alt="Фото Местной растительности." width="400" height="267">
                 </a>
-                <h3 class="catalog__item-title">Местная растительность</h3>
-                <div class="catalog__item-author-wrapper">
-                  <span class="catalog__item-author">Автор фото:</span>
-                  <b class="catalog__item-author-name">Сергей</b>
-                </div>
+                <div class="catalog__item-description">
+                  <div class="catalog__item-title-wrapper">
+                    <h3 class="catalog__item-title">Местная растительность</h3>
+                    <div class="catalog__item-author-wrapper">
+                      <p class="catalog__item-author">Автор:</p>
+                      <b class="catalog__item-author-name">Сергей</b>
+                    </div>
+              </div>
                 <div class="catalog__item-like-wrapper">
                   <button class="catalog__item-like" type="button"><span class="visually-hidden">Поставить
                       лайк</span></button>
@@ -96,11 +108,14 @@
                 <a class="catalog__item-link" href="#">
                   <img class="catalog__item-img" src="" alt="Фото Дороги на Север." width="400" height="267">
                 </a>
-                <h3 class="catalog__item-title">Дорога на Север</h3>
-                <div class="catalog__item-author-wrapper">
-                  <span class="catalog__item-author">Автор фото:</span>
-                  <b class="catalog__item-author-name">Петр</b>
-                </div>
+                <div class="catalog__item-description">
+                  <div class="catalog__item-title-wrapper">
+                    <h3 class="catalog__item-title">Дорога на Север</h3>
+                    <div class="catalog__item-author-wrapper">
+                      <p class="catalog__item-author">Автор:</p>
+                      <b class="catalog__item-author-name">Петр</b>
+                    </div>
+              </div>
                 <div class="catalog__item-like-wrapper">
                   <button class="catalog__item-like" type="button"><span class="visually-hidden">Поставить
                       лайк</span></button>
@@ -113,11 +128,14 @@
                 <a class="catalog__item-link" href="#">
                   <img class="catalog__item-img" src="" alt="Фото Моста дьявола." width="400" height="267">
                 </a>
-                <h3 class="catalog__item-title">Мост дьявола</h3>
-                <div class="catalog__item-author-wrapper">
-                  <span class="catalog__item-author">Автор фото:</span>
-                  <b class="catalog__item-author-name">Антон</b>
-                </div>
+                <div class="catalog__item-description">
+                  <div class="catalog__item-title-wrapper">
+                    <h3 class="catalog__item-title">Мост дьявола</h3>
+                    <div class="catalog__item-author-wrapper">
+                      <p class="catalog__item-author">Автор:</p>
+                      <b class="catalog__item-author-name">Антон</b>
+                    </div>
+              </div>
                 <div class="catalog__item-like-wrapper">
                   <button class="catalog__item-like" type="button"><span class="visually-hidden">Поставить
                       лайк</span></button>
@@ -136,8 +154,8 @@
             <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
               очередной раз!</p>
             <div class="video__preview">
-              <img class="video__preview-img" src="" alt="Превью видео" width="800" height="500">
               <button class="video__play-button"><span class="visually-hidden">Запустить видео</span></button>
+              <video class="video__container" poster="#"></video>
             </div>
           </div>
         </section>
@@ -147,30 +165,35 @@
 
     <!-- Footer -->
 
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag hashtag">
-          <a class="hashtag__title" href="#">#Visitsedona</a>
+    <footer class="footer">
+      <div class="footer__wrapper">
+
+        <div class="footer__hashtag hashtag">
+          <p class="footer__hashtag__title" href="#">#Visitsedona</p>
         </div>
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
-              <span class="visually-hidden">ВКонтакте</span>
+        <div class="footer__social social">
+          <ul class="footer__social__list">
+            <li class="footer__social__item">
+              <a class="footer__social__link footer__social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">ВКонтакте</span></a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
-              <span class="visually-hidden">Телеграмм</span>
+            <li class="footer__social__item">
+              <a class="footer__social__link footer__social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграмм</span></a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
-              <span class="visually-hidden">Youtube</span>
+            <li class="footer__social__item">
+              <a class="footer__social__link footer__social__link--youtube"
+                href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Youtube</span></a>
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright ">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        <div class="footer__copyright copyright ">
+          <a class="footer__copyright__link" id="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="footer__copyright__text">Разработано</b>
+            <img class="logo-img" src="./img/icons/logo/logo-htmlacademy.svg" alt="Логотип-htmlacademy." width="27"
+          height="35">
+          </a>
         </div>
       </div>
     </footer>

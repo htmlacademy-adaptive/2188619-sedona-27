@@ -11,10 +11,19 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .visited-places__list {
   .list-none-style();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .visited-places__item {

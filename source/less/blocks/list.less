@@ -1,5 +1,10 @@
 .list {
   .list-none-style();
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .list__item {
@@ -9,9 +14,69 @@
   padding-bottom: 12px;
   position: relative;
   cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: @bg-color-base;
+    min-width: 153px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:active {
+      background-color: #ffffff;
+    }
+
+    &:nth-child(4n+3) {
+      grid-column: 4/5;
+    }
+
+    &:nth-child(4n+4) {
+      grid-column: 5/6;
+    }
+  }
+
+  @media (max-width: @mobile-width-only) {
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #668bab;
+      display: block;
+    }
+  }
+
+  @media (max-width: @mobile-width-only) {
+    &:not(:first-child)::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #98bfde;
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @bg-color-base;
+    min-width: 240px;
+  }
 }
 
-/*Padding у ссылки для увеличения области клика*/
+// Padding у ссылки для увеличения области клика
 
 .list__link {
   .font-size-title-style();
@@ -24,12 +89,25 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
-  &:hover {
-    color: #81b3d2;
-  }
-
-  &:active {
+  @media (min-width: @tablet-width) {
     color: #000000;
-    opacity: 0.3;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
+  }
+}
+
+.list__link--current {
+  @media (min-width: @tablet-width) {
+    color: #766357;
   }
 }
