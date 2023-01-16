@@ -20,4 +20,12 @@
   color: #000000;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+
+  @media (min-width: @tablet-width) {
+    min-width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-shadow: 0 5px 15px #00010133;
+  }
 }
