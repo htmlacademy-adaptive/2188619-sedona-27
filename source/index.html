@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -47,9 +51,11 @@
 
       <!-- Hero-block -->
 
-      <section class="hero">
-        <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-        <img class="hero__title" src="./img/hero-mobile.svg" alt="Фото вида гор Седоны." width="282" height="214">
+      <section class="hero-form">
+        <div class="hero-form__wrapper">
+          <h2 class="visually-hidden">Седона</h2>
+          <img class="hero-form__title" src="./img/title-hero.svg" alt="Sedona">
+        </div>
       </section>
 
       <!-- Advantages -->
@@ -66,38 +72,58 @@
               <span class="card__number">-№1-</span>
               <p class="card__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <div class="card__image-wrapper">
-              <img class="card__image" src="#" alt="Фото дома в городе Седона." width="320" height="260">
+            <div class="advantages__item-img-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                srcset="./img/foto/advantages-sedona-photo-city-desktop-1@1x.jpg 1x, ./img/foto/advantages-sedona-photo-city-desktop-1@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/foto/advantages-sedona-photo-city-tablet-1@1x.jpg 1x, ./img/foto/advantages-sedona-photo-city-tablet-1@2x.jpg 2x">
+              <source type="image/webp"
+                srcset="./img/foto/advantages-sedona-photo-city-mobile-1@1x.jpg 1x, ./img/foto/advantages-sedona-photo-city-mobile-1@2x.jpg 2x">
+                <img class="advantages__item-img" src="./img/foto/advantages-sedona-photo-city-mobile-1@1x.jpg" width="320"
+                  height="260" srcset="./img/foto/advantages-sedona-photo-city-mobile-1@2x.jpg 2x"
+                  alt="Вид Седоны, настоящего города.">
+              </picture>
             </div>
             <ul class="bonus-list">
-              <li class="bonus__item card__inner card__housing">
-                <div class="bonus__wrapper">
-                  <h3 class="bonus__title">Жилье</h3>
-                  <p class="bonus__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <li class="bonus-list__item card__inner card__housing">
+                <div class="bonus-list__wrapper">
+                  <h3 class="bonus-list__title">Жилье</h3>
+                  <p class="bonus-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
               </li>
-              <li class="bonus__item card__inner card__food">
-                <div class="bonus__wrapper">
-                  <h3 class="bonus__title">Еда</h3>
-                  <p class="bonus__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              <li class="bonus-list__item card__inner card__food">
+                <div class="bonus-list__wrapper">
+                  <h3 class="bonus-list__title">Еда</h3>
+                  <p class="bonus-list__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                 </div>
               </li>
-              <li class="bonus__item card__inner card__souvenirs">
-                <div class="bonus__wrapper">
-                  <h3 class="bonus__title">Сувениры</h3>
-                  <p class="bonus__description">Не только китайского, но и местного производства!</p>
+              <li class="bonus-list__item card__inner card__souvenirs">
+                <div class="bonus-list__wrapper">
+                  <h3 class="bonus-list__title">Сувениры</h3>
+                  <p class="bonus-list__description">Не только китайского, но и местного производства!</p>
                 </div>
               </li>
             </ul>
           </li>
-          <li class="advantages__item card advantages__item--first-type advantages__item-first-type--reverse">
+          <li class="advantages__item card advantages__item--first-type advantages__item-first-type-reverse">
             <div class="card__wrapper">
               <h3 class="card__title">Там есть мост дьявола</h3>
               <span class="card__number">-№2-</span>
               <p class="card__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
             <div class="card__image-wrapper">
-              <img class="card__image" src="#" alt="Фото Моста дьявола." width="800" height="260">
+              <picture>
+                <source media="(min-width: 1200px)"
+                srcset="./img/foto/advantages-sedona-photo-bridge-desktop-1@1x.jpg 1x, ./img/foto/advantages-sedona-photo-bridge-desktop-1@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/foto/advantages-sedona-photo-bridge-tablet-1@1x.jpg 1x, ./img/foto/advantages-sedona-photo-bridge-tablet-1@2x.jpg 2x">
+              <source type="image/webp"
+                srcset="./img/foto/advantages-sedona-photo-bridge-mobile-1@1x.jpg 1x, ./img/foto/advantages-sedona-photo-bridge-mobile-1@1x.jpg 2x">
+                <img class="advantages__item-img" src="./img/foto/advantages-sedona-photo-city-mobile-1@1x.jpg" width="320"
+                  height="260" srcset="./img/foto/advantages-sedona-photo-city-mobile-1@2x.jpg 2x"
+                  alt="Вид Седоны, настоящего города.">
+              </picture>
             </div>
           </li>
           <li class="advantages__item card card--end-type">
