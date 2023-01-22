@@ -11,9 +11,17 @@
 .feedback__header {
   padding: 36px 0 28px 0;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 120px;
+  }
+
   &::after {
     content: "";
-    height: 1px;
+    height: 3px;
     display: block;
     border-bottom: 1px solid #e5e5e5;
     margin-top: 28px;

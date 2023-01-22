@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Оставьте отзыв о Седоне</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -63,28 +67,28 @@
               посещенных
               вами достопримечательностях.</p>
           </div>
-          <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="feedback-form" action="https://echo.htmlacademy.ru/"      method="get">
 
             <!-- Personal-form -->
             <div class="feedback-form__container">
               <div class="feedback-form__wrapper">
                 <div class="feedback-form__item feedback-form__item-personal-data">
-                  <fieldset class="feedback-form__item-fieldset personal-data">
-                    <legend class="personal-form__title">Представьтесь:</legend>
-                    <ul class="personal-form__list">
-                      <li class="personal-form__item input">
+                  <fieldset class="feedback-form__item-fieldset feedback-form__personal-data">
+                    <legend class="feedback-form__personal-title">Представьтесь:</legend>
+                    <ul class="feedback-form__personal-list">
+                      <li class="feedback-form__personal-item input">
                         <label class="feedback__label feedback__label--personal-data"
                           for="name">Имя<sup>*</sup>:</label>
                         <input class="feedback__field feedback__field--personal-data" type="text" name="name" id="name"
                           placeholder="Пётр" required>
                       </li>
-                      <li class="personal-form__item input">
+                      <li class="feedback-form__personal-item input">
                         <label class="feedback__label feedback__label--personal-data"
                           for="surname">Фамилия<sup>*</sup>:</label>
                         <input class="feedback__field feedback__field--personal-data" type="text" name="surname"
                           id="surname" placeholder="Пустота" required>
                       </li>
-                      <li class="personal-form__item input">
+                      <li class="feedback-form__personal-item input">
                         <label class="feedback__label feedback__label--personal-data" for="secondname">Отчество:</label>
                         <input class="feedback__field feedback__field--personal-data" type="text" name="secondname"
                           id="secondname" placeholder="Викторович">
@@ -143,7 +147,7 @@
             <!-- Visited-places -->
             <div class="feedback-form__item feedback-form__item-visited-sight">
               <fieldset class=" visited-places">
-                <legend class="visited__form-title impression-wrapper"><span class="impression-wrapper__text">Посещенные
+                <legend class="visited-places__form-title impression-wrapper"><span class="impression-wrapper__text">Посещенные
                     достопримечательности:</span></legend>
                 <ul class="visited-places__list">
                   <li class="visited-places__item">
@@ -188,52 +192,54 @@
                     placeholder="Опишите подробно все свои восторги"></textarea>
 
                 </div>
+
               </fieldset>
+
+              <button class="feedback__button button" type="submit">Отправить отзыв</button>
+              <span class="feedback__footnote"><sup>*</sup>Обязательные поля</span>
             </div>
 
+          </form>
         </div>
-        <button class="feedback__button button" type="submit">Отправить отзыв</button>
-        <span class="feedback__footnote"><sup>*</sup>Обязательные поля</span>
-        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+
+        <div class="footer__hashtag hashtag">
+          <p class="footer__hashtag-title" href="#">#Visitsedona</p>
+        </div>
+        <div class="footer__social social">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link-vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">ВКонтакте</span></a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link-telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграмм</span></a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link-youtube"
+                href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Youtube</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright copyright ">
+          <a class="footer__copyright-link" id="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="footer__copyright-text">Разработано</b>
+            <img class="logo-img" src="./img/icons/logo/logo-htmlacademy.svg" alt="Логотип-htmlacademy." width="27"
+              height="35">
+          </a>
+        </div>
+      </div>
+    </footer>
   </div>
-  </section>
-  </main>
-
-  <!-- Footer -->
-
-  <footer class="footer">
-    <div class="footer__wrapper">
-
-      <div class="footer__hashtag hashtag">
-        <p class="footer__hashtag-title" href="#">#Visitsedona</p>
-      </div>
-      <div class="footer__social social">
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link-vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте</span></a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link-telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграмм</span></a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link-youtube"
-              href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Youtube</span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright copyright ">
-        <a class="footer__copyright-link" id="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <b class="footer__copyright-text">Разработано</b>
-          <img class="logo-img" src="./img/icons/logo/logo-htmlacademy.svg" alt="Логотип-htmlacademy." width="27"
-            height="35">
-        </a>
-      </div>
-    </div>
-  </footer>
-  </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

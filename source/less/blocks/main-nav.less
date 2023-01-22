@@ -1,7 +1,6 @@
 .main-nav {
   position: relative;
   z-index: 2;
-  max-width: 1200px;
 
   @media (max-width: @mobile-width-only) {
     &::after {
@@ -13,6 +12,20 @@
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
       display: block;
     }
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+    margin-top: 90px;
   }
 }
 
@@ -30,7 +43,6 @@
     width: 1200px;
   }
 }
-
 
 .main-nav__toggle {
   .padding-margin-none-style();
@@ -58,7 +70,7 @@
   }
 }
 
-.main-nav__toggle::before {
+.main-nav--opened .main-nav__toggle::before {
   content: "";
   position: absolute;
   background: url("../../img/icons/icon-cross.svg") no-repeat;

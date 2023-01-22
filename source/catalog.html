@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог сайта Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -56,8 +60,8 @@
       <div class="catalog-wrapper">
         <section class="catalog">
           <div class="catalog__header section-header">
-            <h2 class="catalog__title feedback__header-title">Фото и видео</h2>
-            <p class="feedback__header-description">Не можете решиться на путешествие из-за курса? <br> Фотографии
+            <h2 class="catalog__title catalog__header-title">Фото и видео</h2>
+            <p class="catalog-description">Не можете решиться на путешествие из-за курса? <br> Фотографии
               помогут вам забыть
               о
               политике и экономике.</p>
@@ -67,8 +71,18 @@
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
                 <a class="catalog__item-link" href="#">
-                  <img class="catalog__item-img catalog__item-img--main" src=""
-                    alt="Уходящая в закат дорога на фоне бескрайних просторов." height="400">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/foto-catalog/local-spaces-desktop@1x.jpg, ./img/foto-catalog/local-spaces-desktop@2x.jpg">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/foto-catalog/local-spaces-tablet@1x.jpg, ./img/foto-catalog/local-spaces-tablet@2x.jpg">
+                    <source type="image/webp"
+                      srcset="./img/foto-catalog/local-spaces-mobile@1x.jpg, ./img/foto-catalog/local-spaces-mobile@2x.jpg">
+                    <img class="catalog__item-img catalog__item-img--main"
+                      src="./img/foto-catalog/local-spaces-mobile@1x.jpg" width="1200" height="400"
+                      srcset="./img/foto-catalog/local-spaces-mobile@2x.jpg 2x"
+                      alt="Неродные просторы">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <div class="catalog__item-title-wrapper">
@@ -89,7 +103,18 @@
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
                 <a class="catalog__item-link" href="#">
-                  <img class="catalog__item-img" src="" alt="Фото Местной растительности." width="400" height="267">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/foto-catalog/flower-desktop@1x.jpg, ./img/foto-catalog/flower-desktop@2x.jpg">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/foto-catalog/flower-tablet@1x.jpg, ./img/foto-catalog/flower-tablet@2x.jpg">
+                    <source type="image/webp"
+                      srcset="./img/foto-catalog/flower-mobile@1x.jpg, ./img/foto-catalog/flower-mobile@2x.jpg">
+                    <img class="catalog__item-img catalog__item-img--main"
+                      src="./img/foto-catalog/flower-mobile@1x.jpg" width="400" height="267"
+                      srcset="./img/foto-catalog/flower-mobile@2x.jpg"
+                      alt="Местная растительность">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <div class="catalog__item-title-wrapper">
@@ -110,7 +135,18 @@
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
                 <a class="catalog__item-link" href="#">
-                  <img class="catalog__item-img" src="" alt="Фото Дороги на Север." width="400" height="267">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/foto-catalog/road-to-north-desktop@1x.jpg, ./foto-catalog/road-to-north-desktop@2x.jpg">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/foto-catalog/road-to-north-tablet@1x.jpg, ./foto-catalog/road-to-north-tablet@2x.jpg">
+                    <source type="image/webp"
+                      srcset="./img/foto-catalog/road-to-north-mobile@1x.jpg 1x, ./img/foto-catalog/road-to-north-mobile@2x.jpg">
+                    <img class="catalog__item-img catalog__item-img--main"
+                      src="./img/foto-catalog/road-to-north-mobile@1x.jpg" width="400" height="267"
+                      srcset="./img/foto-catalog/road-to-north-mobile@1x.jpg"
+                      alt="Дорога на Север">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <div class="catalog__item-title-wrapper">
@@ -131,7 +167,18 @@
             <li class="catalog__item">
               <div class="catalog__item-wrapper">
                 <a class="catalog__item-link" href="#">
-                  <img class="catalog__item-img" src="" alt="Фото Моста дьявола." width="400" height="267">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="./img/foto-catalog/devil-bridge-desktop@1x.jpg, ./img/foto-catalog/devil-bridge-desktop@2x.jpg">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/foto-catalog/devil-bridge-tablet@1x.jpg, ./img/foto-catalog/devil-bridge-tablet@2x.jpg">
+                    <source type="image/webp"
+                      srcset="./img/foto-catalog/devil-bridge-mobile@1x.jpg, ./img/foto-catalog/devil-bridge-mobile@2x.jpg">
+                    <img class="catalog__item-img catalog__item-img--main"
+                      src="./img/foto-catalog/devil-bridge-mobile@1x.jpg" width="400" height="267"
+                      srcset="./img/foto-catalog/devil-bridge-mobile@2x.jpg"
+                      alt="Мост дьявола">
+                  </picture>
                 </a>
                 <div class="catalog__item-description">
                   <div class="catalog__item-title-wrapper">
@@ -147,6 +194,7 @@
                     <b class="catalog__item-quantity-of-like">254</b>
                   </div>
                 </div>
+              </div>
             </li>
           </ul>
         </section>
@@ -203,6 +251,7 @@
       </div>
     </footer>
   </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

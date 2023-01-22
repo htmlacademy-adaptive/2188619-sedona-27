@@ -1,10 +1,31 @@
 .hero-form {
   position: relative;
-  background: #82b3d3 url("../../img/backgrounds/hero-form-background-mobile@1x.jpg") no-repeat center center/cover;
+  background: #82b3d3 url("../../img/backgrounds/hero-background-mobile@1x.jpeg") no-repeat center center/cover;
   padding: 52px 0 67px 0;
   min-height: 158px;
   max-width: 1200px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    background: #82b3d3 url("../../img/backgrounds/hero-background-tablet@1x.jpg") no-repeat center center/cover;
+    min-height: 290px;
+    padding: 95px 0 117px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: #82b3d3 url("../../img/backgrounds/hero-background-desktop@1x.jpg") no-repeat center center/cover;
+    min-height: 300px;
+    padding: 101px 0 120px 0;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 57px;
+    background: url("../../img/icons/hero-effect.svg") no-repeat center center/cover;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .hero-form__title {
