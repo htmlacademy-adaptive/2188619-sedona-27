@@ -1,15 +1,14 @@
-// @media (min-width: @tablet-width) {
-//   .main-nav__wrapper {
-//     display: grid;
-//   }
-// }
-
 .list {
   .list-none-style();
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    margin-left: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -82,7 +81,7 @@
   }
 }
 
-// Padding у ссылки для увеличения области клика
+// Padding увеличения области клика
 
 .list__link {
   .font-size-title-style();
