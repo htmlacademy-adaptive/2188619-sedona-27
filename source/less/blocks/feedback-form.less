@@ -6,13 +6,13 @@
 }
 
 .feedback-form__wrapper {
-  position: relative;
-
   @media (min-width: @tablet-width) {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    grid-column-gap: 70px;
+    grid-column-gap: 48px;
+    padding-bottom: 15px;
 
     &::before {
       position: absolute;
@@ -23,23 +23,31 @@
       background-color: #e5e5e5;
       top: 0;
       left: 50%;
+      margin-left: -1px;
+
+      @media (min-width: @desktop-width) {
+        margin-left: 24px;
+      }
     }
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-gap: 128px;
+    grid-column-gap: 60px;
   }
 }
 
+.feedback-form__item-personal {
+  padding-bottom: 40px;
+  margin-bottom: 26px;
+  position: relative;
 
-.feedback-form__item {
-  &:not(:last-child)::after {
+  &::after {
+    position: absolute;
     content: "";
     height: 1px;
-    display: block;
-    border-bottom: 1px solid #e5e5e5;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    width: 100%;
+    background: #e5e5e5;
+    bottom: 0;
 
     @media (min-width: @tablet-width) {
       display: none;
@@ -47,27 +55,106 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 56px;
+    margin: 0;
+    padding: 0;
   }
 }
 
+.feedback-form__item-contacts {
+  padding-bottom: 36px;
+  margin-bottom: 26px;
+  position: relative;
+
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #e5e5e5;
+    bottom: 0;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 28px;
+  }
+}
 
 .feedback-form__item-impression {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #e5e5e5;
+    bottom: -6px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     width: 100%;
-    margin-top: 56px;
+    margin-top: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 57px;
   }
 }
 
-.feedback-form__item-visited-sight {
+.feedback-form__item-visited {
+  margin-top: 32px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #e5e5e5;
+    bottom: -7px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     width: 100%;
+    margin-top: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 84px;
   }
 }
+
 
 .feedback-form__item-emotions {
+  margin-top: 32px;
+
   @media (min-width: @tablet-width) {
     width: 100%;
+    margin-top: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 71px;
   }
 }
 
@@ -83,16 +170,35 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 96px;
   }
 }
 
-.feedback__button {
+.feedback-form__button {
   border: none;
   display: block;
   margin: 0 auto;
+  max-width: 280px;
+  padding: 16px 48px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 23px;
+    font-size: 21px;
+    line-height: 27px;
+    margin: 0;
+    min-width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 383px;
   }
 }
 
@@ -107,32 +213,10 @@
   width: 189px;
   text-align: right;
   margin-left: auto;
-}
 
-.feedback-form__personal-data {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-.feedback-form__personal-list {
-  .list-none-style();
-}
-
-.feedback-form__personal-title {
-  padding: 0;
-  .font-size-title-style();
-  text-align: center;
-  max-width: 295px;
-  display: block;
-  margin: 0 auto;
-}
-
-.feedback-form__personal-item {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-
-  &:not(:last-child) {
-    margin-bottom: 16px;
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 8px;
   }
 }
