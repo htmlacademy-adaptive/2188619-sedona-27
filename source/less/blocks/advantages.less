@@ -6,6 +6,13 @@
 @media (min-width: @tablet-width) {
   display: grid;
   grid-template-columns: 256px 256px 256px;
+  padding-top: 50px;
+  padding-bottom: 55px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 61px;
+    padding-bottom: 44px;
+  }
 }
 
 .advantages__slogan {
@@ -170,6 +177,27 @@
   padding-bottom: 26px;
   position: relative;
   align-self: center;
+
+  @media (max-width: @mobile-width-only) {
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      width: calc(100% - 36px);
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 1px;
+      background-color: #d6d6d6;
+      text-align: center;
+      display: block;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-bottom: 42px;
+  }
 }
 
 .advantages__item-img {
