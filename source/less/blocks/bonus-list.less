@@ -1,0 +1,132 @@
+.bonus-list {
+  .list-none-style();
+  background-color: #ffffff;
+  color: #000000;
+  padding-top: 33px;
+  padding-right: 18px;
+  padding-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-bottom: 60px;
+    grid-column: 1/4;
+    min-width: 768px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.bonus-list__item {
+  padding-left: 65px;
+
+  &:not(:last-child) {
+    margin-bottom: 33px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 256px;
+    padding: 0;
+    padding-top: 130px;
+  }
+}
+
+.bonus-list__title {
+  .padding-margin-none-style();
+  .font-size-title-style();
+  text-align: start;
+  margin-bottom: 16px;
+  max-width: 284px;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.bonus-list__description {
+  .padding-margin-none-style();
+  .font-size-description-style();
+  text-align: start;
+  max-width: 284px;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    max-width: 190px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.card__housing {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url("../../img/icons/icon-house-mobile.svg") no-repeat;
+    top: -8px;
+    left: 18px;
+
+    @media (min-width: @tablet-width) {
+      top: 20%;
+      left: 50%;
+      margin-left: -38px;
+      width: 77px;
+      height: 72px;
+      background-size: 77px 72px;
+    }
+  }
+}
+
+.card__food {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url("../../img/icons/icon-food-mobile.svg") no-repeat;
+    top: -7px;
+    left: 18px;
+
+    @media (min-width: @tablet-width) {
+      top: 20%;
+      left: 50%;
+      margin-left: -38px;
+      width: 77px;
+      height: 72px;
+      background-size: 77px 72px;
+    }
+  }
+}
+
+.card__souvenirs {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url("../../img/icons/icon-souvenirs-mobile.svg") no-repeat;
+    top: -8px;
+    left: 22px;
+
+    @media (min-width: @tablet-width) {
+      top: 20%;
+      left: 50%;
+      margin-left: -38px;
+      width: 77px;
+      height: 72px;
+      background-size: 77px 72px;
+    }
+  }
+}

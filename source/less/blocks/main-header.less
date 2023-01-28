@@ -1,0 +1,21 @@
+.main-header {
+  position: relative;
+  min-height: 56px;
+}
+
+.main-header__logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -93px;
+  top: 0;
+  z-index: 1;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    z-index: 3;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
