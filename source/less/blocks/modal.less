@@ -1,4 +1,4 @@
-.modal__container {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,14 +13,14 @@
   display: block;
 }
 
-.modal {
+.modal__container {
   display: block;
   width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
 }
 
-.modal--success {
+.modal__success {
   // display: none;
   padding-top: 41px;
   padding-bottom: 53px;
@@ -51,7 +51,7 @@
   }
 }
 
-.modal--fail {
+.modal__fail {
   // display: none;
   padding-top: 44px;
   padding-bottom: 35px;
@@ -122,7 +122,7 @@
   }
 }
 
-.modal--fail .modal__title {
+.modal__fail .modal__title {
   margin-bottom: 24px;
 
   @media (min-width: @tablet-width) {
@@ -131,7 +131,7 @@
   }
 }
 
-.modal--fail .modal__description {
+.modal__fail .modal__description {
   margin-bottom: 28px;
   padding: 0 42px;
 
