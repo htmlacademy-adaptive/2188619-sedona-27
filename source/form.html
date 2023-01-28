@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Оставьте отзыв о Седоне</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="./fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
@@ -250,10 +252,10 @@
 
 
     <!-- Modal-->
-    <div class="modal-container">
+    <div class="modal__container">
 
       <!-- Modal-success-->
-      <div class="modal-container__modal modal modal--success">
+      <div class="modal__container--modal modal modal--success">
         <section class="modal__content">
           <h2 class="visually-hidden">Отзыв отправлен</h2>
           <b class="modal__title">Ваш отзыв отправлен!</b>
@@ -265,7 +267,7 @@
       </div>
 
       <!-- Modal-fail-->
-      <div class="modal-container__modal modal modal--fail">
+      <div class="modal__container--modal modal modal--fail">
         <section class="modal__content">
           <h2 class="visually-hidden">Отзыв не отправлен</h2>
           <b class="modal__title">Что-то пошло не так!</b>
